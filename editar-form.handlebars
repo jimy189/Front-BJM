@@ -1,0 +1,10 @@
+<h1>Editar Postes </h1>
+
+<form action="/editar" method="POST">
+  <input type="hidden" name="id" value="{{id}}">
+  <p>Titulo: </p>
+  <input type="text" name="titulo" value="{{title}}">
+  <p>Conteúdo</p>
+  <textarea type="text" name="conteudo" id="" cols="30" rows="10">{{content}}</textarea>
+  <button type="submit">Atualizar postagem</button>
+</form>

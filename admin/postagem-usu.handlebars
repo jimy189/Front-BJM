@@ -1,0 +1,24 @@
+
+  <br>
+   <br>
+    <br>
+    <div class="container">
+            <div class="row featurette ">
+
+                <div class="container">
+                    <h1>Postes</h1>
+                    {{#each doc}}
+                    <h2>
+                        Titulo: {{dataValues.titulo}}<br>
+                    </h2>
+                    <h4>
+                        Conteudo: {{dataValues.conteudo}}<br>
+                        Cadastrado: {{dataValues.createdAt}}<br>  
+                    </h4>
+                    
+                    <hr>
+                    {{/each}}
+
+                </div>
+            </div>
+        </div>

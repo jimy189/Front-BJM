@@ -1,0 +1,15 @@
+
+ <h1>Lista de Postes </h1>
+
+{{#each doc}}
+<h2>
+      Titulo: {{dataValues.titulo}}<br>
+</h2>
+   <h4>
+    Conteudo: {{dataValues.conteudo}}<br>
+    Cadastrado: {{dataValues.createdAt}}<br>  
+   </h4>
+    <a href= "/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    <a href= "/editar/{{dataValues.id}}"><button>editar</button></a>
+<hr>
+{{/each}}
